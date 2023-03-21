@@ -1,0 +1,29 @@
+object DataModule1: TDataModule1
+  Height = 429
+  Width = 500
+  PixelsPerInch = 144
+  object FDConnection: TFDConnection
+    Params.Strings = (
+      'SERVER=tcp:viniciusestevao.database.windows.net,1433'
+      'User_Name=vinicius'
+      'Password=@Develop10'
+      'OSAuthent=No'
+      'ApplicationName=Enterprise/Architect/Ultimate'
+      'Workstation=Notebook2'
+      'DATABASE=BDAZURE1'
+      'MARS=yes'
+      'DriverID=MSSQL')
+    LoginPrompt = False
+    Left = 108
+    Top = 108
+  end
+  object FDManager1: TFDManager
+    WaitCursor = gcrHourGlass
+    FormatOptions.AssignedValues = [fvMapRules]
+    FormatOptions.OwnMapRules = True
+    FormatOptions.MapRules = <>
+    Active = True
+    Left = 276
+    Top = 180
+  end
+end

@@ -1,0 +1,280 @@
+object frmCadProdutos: TfrmCadProdutos
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro de Produtos'
+  ClientHeight = 564
+  ClientWidth = 861
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Position = poScreenCenter
+  OnKeyPress = FormKeyPress
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 321
+    Top = 17
+    Width = 248
+    Height = 32
+    Alignment = taCenter
+    Caption = 'Cadastro de Produtos'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object grdProduto: TDBGrid
+    AlignWithMargins = True
+    Left = 3
+    Top = 74
+    Width = 855
+    Height = 435
+    Align = alBottom
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Calibri'
+    Font.Style = [fsBold]
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    ParentFont = False
+    TabOrder = 0
+    TitleFont.Charset = ANSI_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -18
+    TitleFont.Name = 'Calibri'
+    TitleFont.Style = [fsBold]
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'id_Produto'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Calibri'
+        Font.Style = []
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = 0
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = []
+        Visible = False
+      end
+      item
+        Expanded = False
+        FieldName = 'cd_Produto'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Calibri'
+        Font.Style = []
+        Title.Caption = 'C'#243'digo'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = []
+        Width = 75
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'ds_Nome'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Calibri'
+        Font.Style = []
+        Title.Caption = 'Produto'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = []
+        Width = 167
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'ds_Descricao'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Calibri'
+        Font.Style = []
+        Title.Caption = 'Descri'#231#227'o'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = []
+        Width = 267
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'nr_Lote'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Calibri'
+        Font.Style = []
+        Title.Caption = 'Nro. Lote'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = []
+        Width = 67
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'qt_Estoque'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Calibri'
+        Font.Style = []
+        Title.Caption = 'Qtde Estoque'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = []
+        Width = 83
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'dt_Cadastro'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Calibri'
+        Font.Style = []
+        Title.Caption = 'Data Cadastro'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = []
+        Width = 83
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'dt_Atualizacao'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -16
+        Font.Name = 'Calibri'
+        Font.Style = []
+        Title.Caption = 'Data Altera'#231#227'o'
+        Title.Font.Charset = DEFAULT_CHARSET
+        Title.Font.Color = clWindowText
+        Title.Font.Height = -12
+        Title.Font.Name = 'Segoe UI'
+        Title.Font.Style = []
+        Width = 83
+        Visible = True
+      end>
+  end
+  object pnlTopo: TPanel
+    Left = 0
+    Top = 512
+    Width = 861
+    Height = 52
+    Align = alBottom
+    TabOrder = 1
+    ExplicitTop = 511
+    ExplicitWidth = 857
+    object btnIncluir: TBitBtn
+      AlignWithMargins = True
+      Left = 707
+      Top = 4
+      Width = 46
+      Height = 44
+      Hint = 'Cadastrar uma nova venda'
+      Align = alRight
+      Caption = 'Incluir'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      ExplicitLeft = 703
+    end
+    object btnExcluir: TBitBtn
+      AlignWithMargins = True
+      Left = 811
+      Top = 4
+      Width = 46
+      Height = 44
+      Hint = 'Excluir a venda selecionada'
+      Align = alRight
+      Caption = 'Excluir'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      ExplicitLeft = 807
+    end
+    object btnAlterar: TBitBtn
+      AlignWithMargins = True
+      Left = 759
+      Top = 4
+      Width = 46
+      Height = 44
+      Hint = 'Excluir a venda selecionada'
+      Align = alRight
+      Caption = 'Alterar'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+      ExplicitLeft = 755
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQuery1
+    Left = 200
+    Top = 400
+  end
+  object FDQuery1: TFDQuery
+    IndexesActive = False
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select * from tab_Produto')
+    Left = 112
+    Top = 400
+  end
+  object FDConnection1: TFDConnection
+    LoginPrompt = False
+    Left = 296
+    Top = 400
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    ScreenCursor = gcrHourGlass
+    Left = 432
+    Top = 368
+  end
+end

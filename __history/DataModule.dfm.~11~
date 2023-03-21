@@ -1,0 +1,13 @@
+object DataModule1: TDataModule1
+  Height = 260
+  Width = 333
+  object FDManager1: TFDManager
+    WaitCursor = gcrHourGlass
+    FormatOptions.AssignedValues = [fvMapRules]
+    FormatOptions.OwnMapRules = True
+    FormatOptions.MapRules = <>
+    Active = True
+    Left = 184
+    Top = 120
+  end
+end

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/03/12 11:17:02.000.496,=C:\Users\vinic\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/12 11:18:15.000.067,C:\Users\vinic\Documents\Embarcadero\Studio\Projects\Unit1.pas=E:\Projetos\DelphiProdutos\Unit1.pas</Transaction>
+    <Transaction>2023/03/12 11:18:15.000.067,C:\Users\vinic\Documents\Embarcadero\Studio\Projects\Unit1.dfm=E:\Projetos\DelphiProdutos\Unit1.dfm</Transaction>
+    <Transaction>2023/03/12 11:18:19.000.053,C:\Users\vinic\Documents\Embarcadero\Studio\Projects\Project1.dproj=E:\Projetos\DelphiProdutos\Project1.dproj</Transaction>
+    <Transaction>2023/03/12 11:31:21.000.955,E:\Projetos\DelphiProdutos\Unit1.dfm=E:\Projetos\DelphiProdutos\CadProdutos.dfm</Transaction>
+    <Transaction>2023/03/12 11:31:21.000.955,E:\Projetos\DelphiProdutos\Unit1.pas=E:\Projetos\DelphiProdutos\CadProdutos.pas</Transaction>
+    <Transaction>2023/03/12 13:43:29.000.089,=E:\Projetos\DelphiProdutos\Unit1.pas</Transaction>
+    <Transaction>2023/03/12 13:44:01.000.332,E:\Projetos\DelphiProdutos\Unit1.pas=E:\Projetos\DelphiProdutos\DataModule.pas</Transaction>
+    <Transaction>2023/03/12 13:44:01.000.332,E:\Projetos\DelphiProdutos\Unit1.dfm=E:\Projetos\DelphiProdutos\DataModule.dfm</Transaction>
+    <Transaction>2023/03/18 18:37:34.000.688,=C:\voliveira\Projeto\DelphiProdutos\uClasseProduto.pas</Transaction>
+    <Transaction>2023/03/18 18:42:30.000.504,C:\voliveira\Projeto\DelphiProdutos\CadProdutos.dfm=C:\voliveira\Projeto\DelphiProdutos\ListaProdutos.dfm</Transaction>
+    <Transaction>2023/03/18 18:42:30.000.504,C:\voliveira\Projeto\DelphiProdutos\CadProdutos.pas=C:\voliveira\Projeto\DelphiProdutos\ListaProdutos.pas</Transaction>
+    <Transaction>2023/03/18 18:43:03.000.869,=C:\voliveira\Projeto\DelphiProdutos\CadastroProduto.pas</Transaction>
+    <Transaction>2023/03/20 21:44:50.000.892,C:\voliveira\Projeto\DelphiProdutos\Project1.dproj=C:\voliveira\Projeto\DelphiProdutos\ProjetoCadProduto.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

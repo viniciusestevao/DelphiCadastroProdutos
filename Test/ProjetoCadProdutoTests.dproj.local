@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/03/20 21:46:14.000.520,=C:\voliveira\Projeto\DelphiProdutos\ListaProdutos.pas</Transaction>
+    <Transaction>2023/03/20 21:46:14.000.006,=C:\voliveira\Projeto\DelphiProdutos\Test\TestListaProdutos.pas</Transaction>
+    <Transaction>2023/03/20 21:49:42.000.259,=C:\voliveira\Projeto\DelphiProdutos\uClasseProduto.pas</Transaction>
+    <Transaction>2023/03/20 21:49:42.000.221,=C:\voliveira\Projeto\DelphiProdutos\CadastroProduto.pas</Transaction>
+    <Transaction>2023/03/20 21:50:10.000.705,=C:\voliveira\Projeto\DelphiProdutos\DataModule.pas</Transaction>
+  </Transactions>
+</BorlandProject>

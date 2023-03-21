@@ -1,0 +1,21 @@
+program ProjetoCadProduto;
+
+uses
+  Vcl.Forms,
+  DataModule in 'DataModule.pas' {DataModule1: TDataModule},
+  uClasseProduto in 'uClasseProduto.pas',
+  ListaProdutos in 'ListaProdutos.pas' {frmListaProdutos},
+  CadastroProduto in 'CadastroProduto.pas' {frmCadProduto};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmListaProdutos, frmListaProdutos);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.CreateForm(TfrmCadProduto, frmCadProduto);
+  Application.CreateForm(TfrmListaProdutos, frmListaProdutos);
+  Application.CreateForm(TfrmCadProduto, frmCadProduto);
+  Application.Run;
+end.

@@ -1,0 +1,307 @@
+object frmListaProdutos: TfrmListaProdutos
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro de Produtos'
+  ClientHeight = 564
+  ClientWidth = 861
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Position = poScreenCenter
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 321
+    Top = 17
+    Width = 248
+    Height = 32
+    Alignment = taCenter
+    Caption = 'Cadastro de Produtos'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 714
+    Top = 8
+    Width = 71
+    Height = 21
+    Caption = 'Inclus'#245'es'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 714
+    Top = 28
+    Width = 80
+    Height = 21
+    Caption = 'Altera'#231#245'es'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 714
+    Top = 47
+    Width = 74
+    Height = 21
+    Caption = 'Exclus'#245'es'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 835
+    Top = 8
+    Width = 18
+    Height = 21
+    Alignment = taRightJustify
+    Caption = '01'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 835
+    Top = 26
+    Width = 18
+    Height = 21
+    Alignment = taRightJustify
+    Caption = '01'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 835
+    Top = 47
+    Width = 18
+    Height = 21
+    Alignment = taRightJustify
+    Caption = '01'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object grdProduto: TDBGrid
+    AlignWithMargins = True
+    Left = 3
+    Top = 74
+    Width = 855
+    Height = 435
+    Align = alBottom
+    DataSource = dsProduto
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Options = [dgTitles, dgIndicator, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgTitleClick, dgTitleHotTrack]
+    ParentFont = False
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'ID_Produto'
+        Visible = False
+      end
+      item
+        Expanded = False
+        FieldName = 'Codigo'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Nome'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Descricao'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NroLote'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'Qtde'
+        Visible = True
+      end>
+  end
+  object pnlTopo: TPanel
+    Left = 0
+    Top = 512
+    Width = 861
+    Height = 52
+    Align = alBottom
+    TabOrder = 1
+    ExplicitTop = 511
+    ExplicitWidth = 857
+    object btnIncluir: TBitBtn
+      AlignWithMargins = True
+      Left = 707
+      Top = 4
+      Width = 46
+      Height = 44
+      Hint = 'Cadastrar uma nova venda'
+      Align = alRight
+      Caption = 'Incluir'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      OnClick = btnIncluirClick
+      ExplicitLeft = 703
+    end
+    object btnExcluir: TBitBtn
+      AlignWithMargins = True
+      Left = 811
+      Top = 4
+      Width = 46
+      Height = 44
+      Hint = 'Excluir a venda selecionada'
+      Align = alRight
+      Caption = 'Excluir'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      OnClick = btnExcluirClick
+      ExplicitLeft = 807
+    end
+    object btnAlterar: TBitBtn
+      AlignWithMargins = True
+      Left = 759
+      Top = 4
+      Width = 46
+      Height = 44
+      Hint = 'Excluir a venda selecionada'
+      Align = alRight
+      Caption = 'Alterar'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+      OnClick = btnAlterarClick
+      ExplicitLeft = 755
+    end
+  end
+  object dsProduto: TDataSource
+    DataSet = fdqPrincipal
+    Left = 200
+    Top = 400
+  end
+  object fdqPrincipal: TFDQuery
+    AutoCalcFields = False
+    IndexesActive = False
+    Connection = FDConnection1
+    SQL.Strings = (
+      
+        'select ID_Produto,Codigo,Nome,Descricao,NroLote,Qtde from tab_Pr' +
+        'oduto')
+    Left = 112
+    Top = 400
+    object fdqPrincipalID_Produto: TFDAutoIncField
+      FieldName = 'ID_Produto'
+      Origin = 'ID_Produto'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      IdentityInsert = True
+    end
+    object fdqPrincipalCodigo: TStringField
+      FieldName = 'Codigo'
+      Origin = 'Codigo'
+      FixedChar = True
+      Size = 10
+    end
+    object fdqPrincipalNome: TWideStringField
+      FieldName = 'Nome'
+      Origin = 'Nome'
+      Size = 50
+    end
+    object fdqPrincipalDescricao: TWideStringField
+      FieldName = 'Descricao'
+      Origin = 'Descricao'
+      Size = 50
+    end
+    object fdqPrincipalNroLote: TWideStringField
+      FieldName = 'NroLote'
+      Origin = 'NroLote'
+      Size = 50
+    end
+    object fdqPrincipalQtde: TFloatField
+      FieldName = 'Qtde'
+      Origin = 'Qtde'
+    end
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    ScreenCursor = gcrHourGlass
+    Left = 432
+    Top = 368
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'SERVER=tcp:viniciusestevao.database.windows.net,1433'
+      'User_Name=vinicius'
+      'Password=@Develop10'
+      'OSAuthent=No'
+      'ApplicationName=Enterprise/Architect/Ultimate'
+      'Workstation=Notebook2'
+      'DATABASE=BDAZURE1'
+      'MARS=yes'
+      'DriverID=MSSQL')
+    Connected = True
+    LoginPrompt = False
+    Left = 280
+    Top = 392
+  end
+end
